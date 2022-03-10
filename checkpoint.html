@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckPoint 1</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,400;1,200;1,300&family=Roboto+Slab:wght@100;200;400;500&family=Roboto:wght@100&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+<style>
+    .grid-one{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: lightgray;
+        width: 550px;
+        padding: 5px 5px;
+        margin-top: 5rem;
+        margin-left: 5rem;
+    }
+
+    .blue{
+        color: blue;
+    }
+
+    .grid-two {
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+        margin-left: 5rem;
+        width: 850px;
+        margin-top: 5rem;
+    }
+
+    .text-column{
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .red{
+        background-color: red;
+        padding: 14px;
+        font-size: 14px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 800;
+    }
+
+    .blue-text{
+        background-color: lightblue;
+        padding: 14px;
+        font-size: 14px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 800;
+    }
+
+    .yellow{
+        background-color: yellow;
+        padding: 14px;
+        font-size: 14px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 800;
+    }
+
+    .grid-three{
+        display: grid;
+        grid-column: 1/-1;
+        background-color: lightgray;
+        width: 500px;
+        height: 300px;
+        margin-left: 5rem;
+        margin-top: 5rem;
+        padding: 15px 20px;
+    }
+
+    .row {
+        display: grid;
+        grid-row: 3;
+        
+    }
+
+    .p-tag {
+        display: grid;
+        grid-row: 1;
+    }
+
+    .img-wrap{
+        width: 500px;
+        height: 225px;
+    }
+
+    .grid-four{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 500px;
+        background-color: green;
+        margin-top: 5rem;
+        margin-left: 5rem;
+        padding: 15px 20px;
+    }
+
+    #class-two{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 600;
+    }
+
+    .class-one{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 600;
+    }
+
+    .grid-five{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 500px;
+        background-color: #ccc;
+        margin-top: 5rem;
+        margin-left: 5rem;
+        padding: 15px 20px;
+    }
+
+    #class-six{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 8rem;
+    }
+
+    #class-six img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .class-five {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 900;
+    }
+
+    .grid-six{
+        display: flex;
+        grid-template-columns: 2fr 3fr;
+        margin-top: 5rem;
+        margin-left: 5rem;
+        width: 550px;
+        background-color: #ccc;
+        padding: 10px 15px;
+    }
+
+    .grid-six i{
+        font-size: 20px;
+    }
+
+    .grid-six p {
+        margin-top: 1rem;
+        margin-left: 7rem;
+        font-family: 'Noto Serif Display', serif;
+    }
+
+</style>
+</head>
+<body>
+
+    <div class="grid-one">
+        <p>Hello World</p>
+        <p class="blue">My fantastic Content</p>
+    </div>
+
+    <div class="grid-two">
+        <div class="text-column">
+            <p class="red">Whatever</p>
+        </div>
+        <div class="text-column">
+            <p class="blue-text">Text</p>
+        </div>
+        <div class="text-column">
+            <p class="yellow">I Want</p>
+        </div>
+    </div>
+
+    <div class="grid-three">
+        <div class="column-wrapper p-tag">
+            <p>Work life balance</p>
+        </div>
+        <div class="column-wrapper row">
+            <img src="images/snow.png" class="img-wrap">
+        </div>
+    </div>
+
+    <div class="grid-four">
+        <div class="class-one">
+            <p>Welcome to awesome tutorial</p>
+        </div>
+        <div id="class-two">
+            <p>My left hand</p>
+            <p>My right hand</p>
+        </div>
+    </div>
+
+    <div class="grid-five">
+        <div class="class-five">
+            <p>Welcome to awesome tutorial</p>
+        </div>
+        <div id="class-six">
+            <img src="images/photo-1487782310695-ed8583618566.jpg" alt="">
+            <img src="images/photo-1551582045-6ec9c11d8697.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="grid-six">
+        
+        <i class="fas fa-map-marker-alt"></i>
+        
+
+        
+        <p>Find the best awesome google fonts here</p>
+        
+    </div>
+
+   
+    
+</body>
+</html>
